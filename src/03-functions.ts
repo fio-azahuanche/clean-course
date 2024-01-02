@@ -12,24 +12,23 @@
         console.log({ id });
     }
     
-    interface movie {
+    interface Movie {
         title: string, 
         description: string, 
         rating: number, 
         cast: string[]
     }
 
-    // Crear una película
-    function createMovie( { title, description, rating, cast } : movie ) {
+    function createMovie( { title, description, rating, cast } : Movie ) {
         console.log({ title, description, rating, cast });
     }
 
-    interface actor {
+    interface Actor {
         fullName: string, 
         birthdate: Date 
     }
-    // Crea un nuevo actor
-    function createNewActor( { fullName, birthdate } : actor ): boolean {
+  
+    function createNewActor( { fullName, birthdate } : Actor ): boolean {
         
         // tarea asincrona para verificar nombre
         // ..
